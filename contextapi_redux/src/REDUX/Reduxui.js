@@ -11,8 +11,8 @@ const Reduxui = () => {
         Counter with REDUX
       </h1>
       <h1>{myState}</h1>
-      <button onClick={() => dispatch(incNumber())}>Inc</button>
-      <button onClick={() => dispatch(decNumber())}>Dec</button>
+      <button onClick={() => dispatch(incNumber(5))}>Inc</button>
+      <button onClick={() => dispatch(decNumber(2))}>Dec</button>
       <button
         onClick={() => {
           dispatch(reSet());
