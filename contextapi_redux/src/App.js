@@ -4,7 +4,8 @@ import "./App.css";
 // import ComA from "./ContextAPI/ComA";
 // import ComC from "./ContextAPI/ComC";
 // import ComB from "./ContextAPI/ComB";
-import Reduce from "./useReducer/Reduce";
+// import Reduce from "./useReducer/Reduce";
+import Reduxui from "./REDUX/Reduxui";
 
 const FirstName = createContext();
 const LastName = createContext();
@@ -25,7 +26,8 @@ function App() {
       </Address.Provider> */}
             {/* <ComA/> */}
         {/* <ComB /> */}
-        <Reduce/>
+        {/* <Reduce/> */}
+        <Reduxui/>
     </>
   );
 }
