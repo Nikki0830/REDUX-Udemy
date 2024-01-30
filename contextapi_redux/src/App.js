@@ -1,11 +1,13 @@
 import { createContext } from "react";
 import "./App.css";
+import RindexU from "./Component/REDUXUDEMY/reducers/RindexU";
 // import ComB from "./ContextAPI/ComB";
 // import ComA from "./ContextAPI/ComA";
 // import ComC from "./ContextAPI/ComC";
 // import ComB from "./ContextAPI/ComB";
 // import Reduce from "./useReducer/Reduce";
-import Reduxui from "./REDUX/Reduxui";
+// import Reduxui from "./REDUX/Reduxui";
+
 
 const FirstName = createContext();
 const LastName = createContext();
@@ -27,7 +29,10 @@ function App() {
             {/* <ComA/> */}
         {/* <ComB /> */}
         {/* <Reduce/> */}
-        <Reduxui/>
+        {/* <Reduxui/> */}
+
+        {/* REDUX UDEMY */}
+    <RindexU/>
     </>
   );
 }
