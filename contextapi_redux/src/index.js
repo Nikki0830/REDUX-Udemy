@@ -5,12 +5,12 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // import store from "./REDUX/store";
 // import { Provider } from "react-redux";
-import store from "./Component/REDUXUDEMY/store";
+import store from "./Component/store/configureStore";
 import {
   addTask,
   completedTask,
   removeTask,
-} from "./Component/REDUXUDEMY/action";
+} from "./Component/store/task";
 
 //to display is ypur app has redux store opr not
 // store.subscribe(() => console.log(store.getState()));
