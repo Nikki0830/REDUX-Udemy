@@ -1,13 +1,13 @@
 import { createContext } from "react";
 import "./App.css";
-import RindexU from "./Component/REDUXUDEMY/reducers/RindexU";
+// import RindexU from "./Component/RindexU";
+
 // import ComB from "./ContextAPI/ComB";
 // import ComA from "./ContextAPI/ComA";
 // import ComC from "./ContextAPI/ComC";
 // import ComB from "./ContextAPI/ComB";
 // import Reduce from "./useReducer/Reduce";
 // import Reduxui from "./REDUX/Reduxui";
-
 
 const FirstName = createContext();
 const LastName = createContext();
@@ -26,13 +26,13 @@ function App() {
       <Address.Provider value="Bangalore">
         <ComB />
       </Address.Provider> */}
-            {/* <ComA/> */}
-        {/* <ComB /> */}
-        {/* <Reduce/> */}
-        {/* <Reduxui/> */}
+      {/* <ComA/> */}
+      {/* <ComB /> */}
+      {/* <Reduce/> */}
+      {/* <Reduxui/> */}
 
-        {/* REDUX UDEMY */}
-    <RindexU/>
+      {/* REDUX UDEMY */}
+      {/* <RindexU /> */}
     </>
   );
 }

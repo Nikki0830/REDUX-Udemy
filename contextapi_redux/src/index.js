@@ -3,18 +3,33 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import store from "./REDUX/store";
-import { Provider } from "react-redux";
+// import store from "./REDUX/store";
+// import { Provider } from "react-redux";
+import store from "./Component/REDUXUDEMY/store";
+import { addTask, removeTask } from "./Component/REDUXUDEMY/action";
 
 //to display is ypur app has redux store opr not
-store.subscribe(() => console.log(store.getState()));
+// store.subscribe(() => console.log(store.getState()));
+
+// store.dispatch({ type: "ADD_TASK", payload: { task: "Task 1" } });
+// console.log(store.getState())
+
+// store.dispatch({ type: "REMOVE_TASK", payload: { id: 1 } });
+// console.log(store.getState());
+
+store.dispatch(addTask("Task 1"));
+console.log(store.getState());
+
+store.dispatch(removeTask(1));
+console.log(store.getState())
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
+    {/* <Provider store={store}>
       <App />
-    </Provider>
+    </Provider> */}
+    <App />
   </React.StrictMode>
 );
 
