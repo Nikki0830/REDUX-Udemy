@@ -6,7 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 // import store from "./REDUX/store";
 // import { Provider } from "react-redux";
 import store from "./Component/REDUXUDEMY/store";
-import { addTask, removeTask } from "./Component/REDUXUDEMY/action";
+import {
+  addTask,
+  completedTask,
+  removeTask,
+} from "./Component/REDUXUDEMY/action";
 
 //to display is ypur app has redux store opr not
 // store.subscribe(() => console.log(store.getState()));
@@ -16,12 +20,24 @@ import { addTask, removeTask } from "./Component/REDUXUDEMY/action";
 
 // store.dispatch({ type: "REMOVE_TASK", payload: { id: 1 } });
 // console.log(store.getState());
+const unsubscribe = store.subscribe(() => {
+  console.log("updated", store.getState());
+});
 
 store.dispatch(addTask("Task 1"));
-console.log(store.getState());
+store.dispatch(addTask("Task 2"));
+store.dispatch(addTask("Task 3"));
 
-store.dispatch(removeTask(1));
-console.log(store.getState())
+// console.log(store.getState());
+
+// store.dispatch(removeTask(2));
+// console.log(store.getState())
+
+store.dispatch(completedTask(1));
+
+store.dispatch(removeTask(2));
+
+unsubscribe();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
