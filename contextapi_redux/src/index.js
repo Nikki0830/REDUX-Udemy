@@ -10,6 +10,7 @@ import {
   addTask,
   completedTask,
   removeTask,
+  fetchTodo
 } from "./Component/store/task";
 
 //to display is ypur app has redux store opr not
@@ -36,8 +37,9 @@ store.dispatch(addTask("Task 3"));
 store.dispatch(completedTask(1));
 
 store.dispatch(removeTask(2));
+store.dispatch(fetchTodo())
 
-unsubscribe();
+// unsubscribe();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
