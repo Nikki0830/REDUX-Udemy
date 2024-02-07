@@ -10,7 +10,7 @@ import {
   addTask,
   completedTask,
   removeTask,
-  fetchTodo
+  // fetchTodo
 } from "./Component/store/task";
 
 //to display is ypur app has redux store opr not
@@ -21,25 +21,25 @@ import {
 
 // store.dispatch({ type: "REMOVE_TASK", payload: { id: 1 } });
 // console.log(store.getState());
-const unsubscribe = store.subscribe(() => {
-  console.log("updated", store.getState());
-});
+// const unsubscribe = store.subscribe(() => {
+//   console.log("updated", store.getState());
+// });
 
-store.dispatch(addTask("Task 1"));
-store.dispatch(addTask("Task 2"));
-store.dispatch(addTask("Task 3"));
+// store.dispatch(addTask("Task 1"));
+// store.dispatch(addTask("Task 2"));
+// store.dispatch(addTask("Task 3"));
 
-// console.log(store.getState());
+// // console.log(store.getState());
+
+// // store.dispatch(removeTask(2));
+// // console.log(store.getState())
+
+// store.dispatch(completedTask(1));
 
 // store.dispatch(removeTask(2));
-// console.log(store.getState())
+// // store.dispatch(fetchTodo())
 
-store.dispatch(completedTask(1));
-
-store.dispatch(removeTask(2));
-store.dispatch(fetchTodo())
-
-// unsubscribe();
+// // unsubscribe();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
