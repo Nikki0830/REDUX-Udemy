@@ -8,6 +8,7 @@ import "./App.css";
 // import ComB from "./ContextAPI/ComB";
 // import Reduce from "./useReducer/Reduce";
 // import Reduxui from "./REDUX/Reduxui";
+import ReduxTollUi from "./Component/Redux-toolkit/ReduxTollUi";
 
 const FirstName = createContext();
 const LastName = createContext();
@@ -33,6 +34,7 @@ function App() {
 
       {/* REDUX UDEMY */}
       {/* <RindexU /> */}
+      {/* <ReduxTollUi /> */}
     </>
   );
 }

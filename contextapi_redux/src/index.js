@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // import store from "./REDUX/store";
-// import { Provider } from "react-redux";
+import { Provider } from "react-redux";
 // import store from "./Component/store/configureStore";
 // import {
 //   addTask,
@@ -18,6 +18,7 @@ import {
   removeTask,
   completeTask,
 } from "./Component/Redux-toolkit/task2";
+
 //to display is ypur app has redux store opr not
 // store.subscribe(() => console.log(store.getState()));
 
@@ -30,18 +31,29 @@ import {
 //   console.log("updated", store.getState());
 // });
 
-store.dispatch(addTask("Task 1"));
-store.dispatch(addTask("Task 2"));
-store.dispatch(addTask("Task 3"));
+// store.dispatch(addTask("Task 1"));
+// store.dispatch(addTask("Task 2"));
+// store.dispatch(addTask("Task 3"));
+
+//with redux toolkit
+// store.subscribe(() => console.log(store.getState()));
+store.dispatch(addTask({ task: "Task 1" }));
+// store.dispatch(addTask({ task: "Task 2" }));
+// store.dispatch(addTask({ task: "Task 3" }));
+
+// store.dispatch(completeTask({ id: 1 }));
+// console.log(store.getState());
+// store.dispatch(removeTask({ id: 1 }));
+// console.log(store.getState());
 
 // // console.log(store.getState());
 
 // // store.dispatch(removeTask(2));
 // // console.log(store.getState())
 
-store.dispatch(completeTask(1));
+// store.dispatch(completeTask(1));
 
-store.dispatch(removeTask(2));
+// store.dispatch(removeTask(2));
 // // store.dispatch(fetchTodo())
 
 // // unsubscribe();
@@ -49,10 +61,9 @@ store.dispatch(removeTask(2));
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <Provider store={store}>
+    <Provider store={store}>
       <App />
-    </Provider> */}
-    <App />
+    </Provider>
   </React.StrictMode>
 );
 
