@@ -5,14 +5,19 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // import store from "./REDUX/store";
 // import { Provider } from "react-redux";
-import store from "./Component/store/configureStore";
+// import store from "./Component/store/configureStore";
+// import {
+//   addTask,
+//   completedTask,
+//   removeTask,
+//   // fetchTodo
+// } from "./Component/store/task";
+import store from "./Component/Redux-toolkit/configureStore";
 import {
   addTask,
-  completedTask,
   removeTask,
-  // fetchTodo
-} from "./Component/store/task";
-
+  completeTask,
+} from "./Component/Redux-toolkit/task2";
 //to display is ypur app has redux store opr not
 // store.subscribe(() => console.log(store.getState()));
 
@@ -25,18 +30,18 @@ import {
 //   console.log("updated", store.getState());
 // });
 
-// store.dispatch(addTask("Task 1"));
-// store.dispatch(addTask("Task 2"));
-// store.dispatch(addTask("Task 3"));
+store.dispatch(addTask("Task 1"));
+store.dispatch(addTask("Task 2"));
+store.dispatch(addTask("Task 3"));
 
 // // console.log(store.getState());
 
 // // store.dispatch(removeTask(2));
 // // console.log(store.getState())
 
-// store.dispatch(completedTask(1));
+store.dispatch(completeTask(1));
 
-// store.dispatch(removeTask(2));
+store.dispatch(removeTask(2));
 // // store.dispatch(fetchTodo())
 
 // // unsubscribe();
