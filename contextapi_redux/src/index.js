@@ -12,12 +12,18 @@ import { Provider } from "react-redux";
 //   removeTask,
 //   // fetchTodo
 // } from "./Component/store/task";
-import store from "./Component/Redux-toolkit/configureStore";
-import {
-  addTask,
-  removeTask,
-  completeTask,
-} from "./Component/Redux-toolkit/task2";
+
+// import store from "./Component/Redux-toolkit/configureStore";
+// import {
+//   addTask,
+//   removeTask,
+//   completeTask,
+// } from "./Component/Redux-toolkit/task2";
+
+
+//Redux toolkit practice
+import store from "./REDUXTKpractice/configureStore";
+// import { addTask ,removeTask,completeTask} from "./REDUXTKpractice/task"
 
 //to display is ypur app has redux store opr not
 // store.subscribe(() => console.log(store.getState()));
@@ -37,7 +43,8 @@ import {
 
 //with redux toolkit
 // store.subscribe(() => console.log(store.getState()));
-store.dispatch(addTask({ task: "Task 1" }));
+// store.dispatch(addTask({ task: "Task 1" }));
+// console.log(store.getState());
 // store.dispatch(addTask({ task: "Task 2" }));
 // store.dispatch(addTask({ task: "Task 3" }));
 
@@ -64,6 +71,7 @@ root.render(
     <Provider store={store}>
       <App />
     </Provider>
+    {/* <App/> */}
   </React.StrictMode>
 );
 

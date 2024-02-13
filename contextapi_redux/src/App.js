@@ -1,4 +1,4 @@
-import { createContext } from "react";
+// import { createContext } from "react";
 import "./App.css";
 // import RindexU from "./Component/RindexU";
 
@@ -8,11 +8,12 @@ import "./App.css";
 // import ComB from "./ContextAPI/ComB";
 // import Reduce from "./useReducer/Reduce";
 // import Reduxui from "./REDUX/Reduxui";
-import ReduxTollUi from "./Component/Redux-toolkit/ReduxTollUi";
+// import ReduxTollUi from "./Component/Redux-toolkit/ReduxTollUi";
+import Tkpracticeui from "./REDUXTKpractice/Tkpracticeui";
 
-const FirstName = createContext();
-const LastName = createContext();
-const Address = createContext();
+// const FirstName = createContext();
+// const LastName = createContext();
+// const Address = createContext();
 
 function App() {
   return (
@@ -35,9 +36,10 @@ function App() {
       {/* REDUX UDEMY */}
       {/* <RindexU /> */}
       {/* <ReduxTollUi /> */}
+      <Tkpracticeui/>
     </>
   );
 }
 
 export default App;
-export { FirstName, LastName, Address };
+// export { FirstName, LastName, Address };
