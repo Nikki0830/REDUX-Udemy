@@ -9,7 +9,8 @@ import "./App.css";
 // import Reduce from "./useReducer/Reduce";
 // import Reduxui from "./REDUX/Reduxui";
 // import ReduxTollUi from "./Component/Redux-toolkit/ReduxTollUi";
-import Tkpracticeui from "./REDUXTKpractice/Tkpracticeui";
+// import Tkpracticeui from "./REDUXTKpractice/Tkpracticeui";
+import Reducer from "./UseReducer/Reducer";
 
 // const FirstName = createContext();
 // const LastName = createContext();
@@ -33,10 +34,13 @@ function App() {
       {/* <Reduce/> */}
       {/* <Reduxui/> */}
 
+      {/* //useReducer */}
+      <Reducer/>
+
       {/* REDUX UDEMY */}
       {/* <RindexU /> */}
       {/* <ReduxTollUi /> */}
-      <Tkpracticeui/>
+      {/* <Tkpracticeui/> */}
     </>
   );
 }
