@@ -13,9 +13,13 @@ const DisplayUsers = () => {
   console.log("data", data);
 
   //id from map(users,id)
-  const deleteUsers = (id) => {
-    console.log("deleteruser", id);
-    dispatch(deleteMe(id));
+  // const deleteUsers = (id) => {
+  //   console.log("deleteruser", id);
+  //   dispatch(deleteMe(id));
+  // };
+  const deleteUsers = (user) => {
+    console.log("deleteruser", user);
+    dispatch(deleteMe(user));
   };
 
   return (
@@ -24,7 +28,8 @@ const DisplayUsers = () => {
         return (
           <li key={id}>
             {user}
-            <button className="deleteBtn" onClick={() => deleteUsers(id)}>
+            {/* <button className="deleteBtn" onClick={() => deleteUsers(id)}> */}
+            <button className="deleteBtn" onClick={() => deleteUsers(user)}>
               {/* component from react icons */}
               <MdDeleteForever size={24} color="#f00" className="deleteIcons" />
             </button>
