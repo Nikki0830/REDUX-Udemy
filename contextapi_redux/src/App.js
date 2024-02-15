@@ -1,5 +1,7 @@
 // import { createContext } from "react";
 import "./App.css";
+import Navbar from "./ReduxTkThapa/Navbar";
+import Userdetails from "./ReduxTkThapa/Userdetails";
 // import RindexU from "./Component/RindexU";
 
 // import ComB from "./ContextAPI/ComB";
@@ -10,7 +12,7 @@ import "./App.css";
 // import Reduxui from "./REDUX/Reduxui";
 // import ReduxTollUi from "./Component/Redux-toolkit/ReduxTollUi";
 // import Tkpracticeui from "./REDUXTKpractice/Tkpracticeui";
-import Reducer from "./UseReducer/Reducer";
+// import Reducer from "./UseReducer/Reducer";
 
 // const FirstName = createContext();
 // const LastName = createContext();
@@ -35,7 +37,13 @@ function App() {
       {/* <Reduxui/> */}
 
       {/* //useReducer */}
-      <Reducer/>
+      {/* <Reducer/> */}
+
+      {/* Redux toolki(admin tableby thapa) */}
+      <>
+        <Navbar />
+        <Userdetails/>
+      </>
 
       {/* REDUX UDEMY */}
       {/* <RindexU /> */}

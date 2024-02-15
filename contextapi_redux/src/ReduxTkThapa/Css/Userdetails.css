@@ -1,0 +1,49 @@
+.admin-subtitle {
+  margin-left: 10%;
+  color: lime;
+  text-shadow: 2px 2px 2px black;
+  margin-top: 3%;
+  font-size: larger;
+}
+.admin-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.AddUser {
+  height: fit-content;
+  margin-top: 3%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(176, 243, 176);
+  font-weight: bold;
+  background-image: linear-gradient(cyan, yellow);
+}
+.mapData {
+  /* text-decoration: none; */
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: baseline; */
+  /* justify-content: first baseline; */
+  list-style-type: none;
+  color: rgb(174, 228, 243);
+  text-shadow: 2px 2px 2px purple;
+  margin-top: 3%;
+  font-size: larger;
+  line-height: 40px;
+  text-align: center;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  margin-left: 40%;
+  /* display: flex; */
+  /* margin-top: 10%; */
+}
+.clearAll {
+  background-color: rgb(168, 237, 237);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  margin-left: 50%;
+  cursor:pointer
+}

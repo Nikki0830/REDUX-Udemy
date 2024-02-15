@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // import store from "./REDUX/store";
 import { Provider } from "react-redux";
+import store from "./ReduxTkThapa/store/configureStore";
 // import store from "./Component/store/configureStore";
 // import {
 //   addTask,
@@ -22,7 +23,7 @@ import { Provider } from "react-redux";
 
 
 //Redux toolkit practice
-import store from "./REDUXTKpractice/configureStore";
+// import store from "./REDUXTKpractice/configureStore";
 // import { addTask ,removeTask,completeTask} from "./REDUXTKpractice/task"
 
 //to display is ypur app has redux store opr not
