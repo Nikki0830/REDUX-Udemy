@@ -22,11 +22,10 @@ import reportWebVitals from "./reportWebVitals";
 //   completeTask,
 // } from "./Component/Redux-toolkit/task2";
 
-
 //Redux toolkit practice
 import store from "./REDUXTKpractice/configureStore";
-import { addTask ,removeTask,completeTask} from "./REDUXTKpractice/task"
-import { addTaskE } from "./REDUXTKpractice/employee"
+import { addTask, removeTask, completeTask } from "./REDUXTKpractice/task";
+import { addTaskE } from "./REDUXTKpractice/employee";
 
 //to display is ypur app has redux store opr not
 // store.subscribe(() => console.log(store.getState()));
@@ -57,6 +56,8 @@ store.dispatch(removeTask({ id: 1 }));
 // console.log(store.getState());
 //employeetask
 store.dispatch(addTaskE({ task: "Task Employee" }));
+//showing error by middleware
+store.dispatch({ type: "SHOW_ERROR", payload: { error: "User not found" } });
 
 // // console.log(store.getState());
 
@@ -76,7 +77,7 @@ root.render(
     {/* <Provider store={store}>
       <App />
     </Provider> */}
-    <App/>
+    <App />
   </React.StrictMode>
 );
 
