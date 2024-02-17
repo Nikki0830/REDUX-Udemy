@@ -12,12 +12,12 @@ const userSlice = createSlice({
       //   ...state,
       //   action.payload
       // ]
-      console.log("action data", action.payload);
+      // console.log("action data", action.payload);
     },
 
     deleteMe: (state, action) => {
       //logic
-      console.log("delecteaction", action.payload);
+      // console.log("delecteaction", action.payload);
       // state.pop(action.payload)
       let index = state.indexOf(action.payload);
       state.splice(index, 1);
@@ -39,9 +39,16 @@ const userSlice = createSlice({
       return []
     },
   },
+  //you can do with function as well as object
+  // extraReducers(builder){
+  //   builder.addCase(userSlice.actions.deleteAll,()=>{
+  //     //logic of deleteAll
+  //     return []
+  //   })
+  // }
 });
 
 // console.log(userSlice)
-console.log(userSlice.actions);
+// console.log(userSlice.actions);
 export const { addUser, deleteMe, deleteAll } = userSlice.actions;
 export default userSlice.reducer;

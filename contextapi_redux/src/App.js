@@ -40,10 +40,10 @@ function App() {
       {/* <Reducer/> */}
 
       {/* Redux toolki(admin tableby thapa) */}
-      <>
+      {/* <>
         <Navbar />
         <Userdetails/>
-      </>
+      </> */}
 
       {/* REDUX UDEMY */}
       {/* <RindexU /> */}

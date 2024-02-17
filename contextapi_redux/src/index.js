@@ -4,9 +4,10 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // import store from "./REDUX/store";
-import { Provider } from "react-redux";
-import store from "./ReduxTkThapa/store/configureStore";
+// import { Provider } from "react-redux";
+// import store from "./ReduxTkThapa/store/configureStore";
 // import store from "./Component/store/configureStore";
+
 // import {
 //   addTask,
 //   completedTask,
@@ -23,8 +24,9 @@ import store from "./ReduxTkThapa/store/configureStore";
 
 
 //Redux toolkit practice
-// import store from "./REDUXTKpractice/configureStore";
-// import { addTask ,removeTask,completeTask} from "./REDUXTKpractice/task"
+import store from "./REDUXTKpractice/configureStore";
+import { addTask ,removeTask,completeTask} from "./REDUXTKpractice/task"
+import { addTaskE } from "./REDUXTKpractice/employee"
 
 //to display is ypur app has redux store opr not
 // store.subscribe(() => console.log(store.getState()));
@@ -44,15 +46,17 @@ import store from "./ReduxTkThapa/store/configureStore";
 
 //with redux toolkit
 // store.subscribe(() => console.log(store.getState()));
-// store.dispatch(addTask({ task: "Task 1" }));
+store.dispatch(addTask({ task: "Task 1" }));
 // console.log(store.getState());
-// store.dispatch(addTask({ task: "Task 2" }));
-// store.dispatch(addTask({ task: "Task 3" }));
+store.dispatch(addTask({ task: "Task 2" }));
+store.dispatch(addTask({ task: "Task 3" }));
 
-// store.dispatch(completeTask({ id: 1 }));
+store.dispatch(completeTask({ id: 1 }));
 // console.log(store.getState());
-// store.dispatch(removeTask({ id: 1 }));
+store.dispatch(removeTask({ id: 1 }));
 // console.log(store.getState());
+//employeetask
+store.dispatch(addTaskE({ task: "Task Employee" }));
 
 // // console.log(store.getState());
 
@@ -69,10 +73,10 @@ import store from "./ReduxTkThapa/store/configureStore";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
+    {/* <Provider store={store}>
       <App />
-    </Provider>
-    {/* <App/> */}
+    </Provider> */}
+    <App/>
   </React.StrictMode>
 );
 
